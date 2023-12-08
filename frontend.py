@@ -10,7 +10,7 @@ import os
 import modal 
 
 #api boot
-os.environ["OPENAI_API_KEY"]= st.secrets[gpt_api_key]
+st.secrets[api_key] = os.environ["OPENAI_API_KEY"]
 client = OpenAI()
 
         
