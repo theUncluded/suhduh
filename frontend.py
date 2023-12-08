@@ -10,10 +10,10 @@ import os
 import modal 
 
 #api boot
-st.secrets["api_key"] = os.environ["OPENAI_API_KEY"]
+jeb = st.secrets["OPENAI_API_KEY"]
+os.environ.get(jeb)
 client = OpenAI()
 
-        
 def vit_to_string(list_obj):
   string_result = ''.join(map(str,result))
   string_result = string_result[19:]
