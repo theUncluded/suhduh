@@ -6,4 +6,5 @@ streamlit==1.28.2
 tensorflow==2.14.0
 tensorflow_intel
 transformers
+modal
 
